@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ul, li, ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.calendar{
+    width: 75%;
+    height:25%;
+    background: white;
+    z-index: 15;
+    color:black;
+    border: 0;
+    border-radius:10px;
+    padding: 15px;
+    font-size: 32px;
+}
+.calendar:active{
+    border:none;
+}
+.choose_all{
+    width:100vw;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   background: radial-gradient(#02511a, #4bfb15);
+}
+.choose_all a{
+    transform-origin: 200px;
+
+    color: white;
+    display:inline-block;
+    padding: 10px 30px;
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background: #ffffff33;
+
+}
