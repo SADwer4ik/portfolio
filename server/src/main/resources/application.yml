@@ -1,0 +1,30 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: server
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/games
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secret: "eyJhbGciOiJIUzI1NiJ9eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxODczNTQ4MywiaWF0IjoxNzE4NzM1NDgzfQPSTXg5ha8dwBsHzLQQwa54GWjtKjccuJXF9fHfFyrA"
+  validity: 30m
+
+
+#spring.application.name=server
+#spring.jpa.hibernate.ddl-auto=update
+#spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/games
+#spring.datasource.username=root
+#spring.datasource.password=
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.jpa.show-sql: true
+
+#app.jwtSecret = secret
+#app.jwtValidity = 3600000
+#cors.allowedOrigin = *
